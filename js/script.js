@@ -56,6 +56,10 @@ createApp({
         } else {
           this.activeImage = this.slides.length - 1;
         }
-      }
+      },
+      // Rende attiva un'immagine specifica
+      activateImage: function(clickedIndex) {
+        this.activeImage = clickedIndex;
+      },
     }
 }).mount('#app');
