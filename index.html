@@ -16,8 +16,8 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div class="item" v-for="(singleTemplate, index) in slides" :key="index">
-                    <img v-if="index === activeImage" :src="singleTemplate.image" alt="" />
+                <div class="item" v-for="(singleTemplate, index) in slides"  v-show="index === activeImage">
+                    <img  :src="singleTemplate.image" alt="" />
 
                     <div class="text">
                         <h3>{{singleTemplate.title}}</h3>
